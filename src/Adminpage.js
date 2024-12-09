@@ -878,7 +878,7 @@
 //             <div style={{ textAlign: "center" }}>
 //               <img
 //                 // src={form1Events[currentIndex1].image}
-//                 src={`http://localhost:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
+//                 src={`http://15.206.228.110:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
 
 //                 alt={form1Events[currentIndex1].title}
 //                 style={{
@@ -939,7 +939,7 @@
 //             <div style={{ textAlign: "center" }}>
 //               <img
 //                 // src={form2Events[currentIndex2].image}
-//                 src={`http://localhost:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
+//                 src={`http://15.206.228.110:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
 
 //                 alt={form2Events[currentIndex2].title}
 //                 style={{
@@ -1219,7 +1219,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={`http://localhost:8081${form1Events[currentIndex1].image}`} 
+//                 src={`http://15.206.228.110:8081${form1Events[currentIndex1].image}`} 
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //              <h3 style={{ color: "white", marginTop: "10px" }}>
@@ -1276,7 +1276,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={`http://localhost:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
+//                 src={`http://15.206.228.110:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white", marginTop: "10px" }}>

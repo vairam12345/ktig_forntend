@@ -82,7 +82,7 @@ function Corporatetraining(){
     
         const formattedData = data.map((item) => ({
           id: item._id,
-          imageUrl: `http://localhost:8081${item.imagePath}`, // Correctly prepending the server URL
+          imageUrl: `http://15.206.228.110:8081${item.imagePath}`, // Correctly prepending the server URL
           title: item.title,
           description: item.description,
         }));

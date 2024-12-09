@@ -362,7 +362,7 @@ function Blogpage() {
               <div className="blog-item">
                 <div className="blog-img">
                   <img
-                    src={`http://localhost:8081${blog.imagePath}`} // Ensure to add backend URL
+                    src={`http://15.206.228.110:8081${blog.imagePath}`} // Ensure to add backend URL
                     className="img-fluid rounded-top w-100"
                     alt={blog.title}
                   />

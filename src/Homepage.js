@@ -1229,7 +1229,7 @@ const settings = {
     
         const formattedData = data.map((item) => ({
           id: item._id,
-          imageUrl: `http://localhost:8081${item.imagePath}`, // Correctly prepending the server URL
+          imageUrl: `http://15.206.228.110:8081${item.imagePath}`, // Correctly prepending the server URL
           title: item.title,
           description: item.description,
         }));
@@ -1952,7 +1952,7 @@ const settings = {
             <div className="blog-item">
               <div className="blog-img">
               <img
-                    src={`http://localhost:8081${blog.imagePath}`} // Ensure to add backend URL
+                    src={`http://15.206.228.110:8081${blog.imagePath}`} // Ensure to add backend URL
                     className="img-fluid rounded-top w-100"
                     alt={blog.title}
                   />

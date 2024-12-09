@@ -353,7 +353,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={`http://localhost:8081${form1Events[currentIndex1].image}`} 
+//                 src={`http://15.206.228.110:8081${form1Events[currentIndex1].image}`} 
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //              <h3 style={{ color: "white", marginTop: "10px" }}>
@@ -410,7 +410,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={`http://localhost:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
+//                 src={`http://15.206.228.110:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white", marginTop: "10px" }}>
@@ -742,7 +742,7 @@
 //               Prev
 //             </button>
 //             <img
-//               src={`http://localhost:8081${form1Events[currentIndex1].image}`}
+//               src={`http://15.206.228.110:8081${form1Events[currentIndex1].image}`}
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white" }}>
@@ -811,7 +811,7 @@
 //               Prev
 //             </button>
 //             <img
-//               src={`http://localhost:8081${form2Events[currentIndex2].image}`}
+//               src={`http://15.206.228.110:8081${form2Events[currentIndex2].image}`}
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white" }}>
@@ -1081,7 +1081,7 @@ const handlePrevSlide = (totalSlides) => {
     //         <div key={event._id}>
     //           {/* <img src={event.image} alt={event.title} /> */}
     //           <div key={event._id}>
-    //         <img src={`http://localhost:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
+    //         <img src={`http://15.206.228.110:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
     //       <p>{event.title}</p>
     //       <p>{event.description}</p>
     //       </div>
@@ -1100,7 +1100,7 @@ const handlePrevSlide = (totalSlides) => {
     //         <div key={event._id}>
     //          {/* <img src= {event.image} alt={event.title} />  */}
     //          <div key={event._id}>
-    //         <img src={`http://localhost:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
+    //         <img src={`http://15.206.228.110:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
     //       <p>{event.title}</p>
     //       <p>{event.description}</p>
     //       </div>
@@ -1135,7 +1135,7 @@ const handlePrevSlide = (totalSlides) => {
         form1Events.map((event) => (
           <div key={event._id} className="card">
             <img 
-              src={`http://localhost:8081${event.imagePath}`} 
+              src={`http://15.206.228.110:8081${event.imagePath}`} 
               alt={event.title} 
               className="card-image"
             />
@@ -1162,7 +1162,7 @@ const handlePrevSlide = (totalSlides) => {
         form2Events.map((event) => (
           <div key={event._id} className="card">
             <img 
-              src={`http://localhost:8081${event.imagePath}`} 
+              src={`http://15.206.228.110:8081${event.imagePath}`} 
               alt={event.title} 
               className="card-image"
             />
