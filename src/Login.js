@@ -154,8 +154,8 @@
 //       // Post API call based on form type
 //       const apiUrl =
 //         formType === "form1"
-//           ? "http://localhost:8081/api/images/upload"
-//           : "http://localhost:8081/api/blogimages/upload";
+//           ? "http://15.206.228.110:8081/images/upload"
+//           : "http://15.206.228.110:8081/blogimages/upload";
 
 //       axios
 //         .post(apiUrl, formDataToSend)
@@ -489,8 +489,8 @@
 //       // Post API call based on form type
 //       const apiUrl =
 //         formType === "form1"
-//           ? "http://localhost:8081/api/images/upload"
-//           : "http://localhost:8081/api/blogimages/upload";
+//           ? "http://15.206.228.110:8081/images/upload"
+//           : "http://15.206.228.110:8081/blogimages/upload";
 
 //       axios
 //         .post(apiUrl, formDataToSend)
@@ -903,8 +903,8 @@ const EventForm = ({ onSubmit, formType }) => {
 
       const apiUrl =
         formType === "form1"
-          ? "http://localhost:8081/api/images/upload"
-          : "http://localhost:8081/api/blogimages/upload";
+          ? "http://15.206.228.110:8081/images/upload"
+          : "http://15.206.228.110:8081/blogimages/upload";
 
       axios
         .post(apiUrl, formDataToSend)
@@ -1024,10 +1024,10 @@ const handlePrevSlide = (totalSlides) => {
 
   useEffect(() => {
     // Fetch events from the backend
-    axios.get(" http://localhost:8081/api/images/images").then((response) => {
+    axios.get(" http://15.206.228.110:8081/images/images").then((response) => {
       setForm1Events(response.data);
     });
-    axios.get("http://localhost:8081/api/blogimages/images").then((response) => {
+    axios.get("http://15.206.228.110:8081/blogimages/images").then((response) => {
       
       setForm2Events(response.data);
     });
@@ -1044,8 +1044,8 @@ const handlePrevSlide = (totalSlides) => {
   const handleDelete = (formType, id) => {
     const apiUrl =
       formType === "form1"  
-        ? `http://localhost:8081/api/images/images/${id}`
-        : `http://localhost:8081/api/blogimages/images/${id}`;
+        ? `http://15.206.228.110:8081/images/images/${id}`
+        : `http://15.206.228.110:8081/blogimages/images/${id}`;
 
     axios
       .delete(apiUrl)

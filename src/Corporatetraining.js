@@ -77,7 +77,7 @@ function Corporatetraining(){
  useEffect(() => {
     const fetchSliderData = async () => {
       try {
-        const response = await fetch("http://localhost:8081/api/images/images"); // Replace with your API endpoint
+        const response = await fetch("http://15.206.228.110:8081/images/images"); // Replace with your API endpoint
         const data = await response.json();
     
         const formattedData = data.map((item) => ({

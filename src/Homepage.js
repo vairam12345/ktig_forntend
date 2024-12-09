@@ -914,7 +914,7 @@ function Mainpage() {
         console.log('Payload:', payload);
     
         try {
-          const response = await fetch('http://localhost:8081/api/form/submit', {
+          const response = await fetch('http://15.206.228.110:8081/form/submit', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -941,7 +941,7 @@ const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // Fetch data from the backend
     axios
-      .get("http://localhost:8081/api/blogimages/images") // Replace with your API URL
+      .get("http://15.206.228.110:8081/blogimages/images") // Replace with your API URL
       .then((response) => {
         setBlogs(response.data); // Assuming response.data is an array of blog objects
       })
@@ -1224,7 +1224,7 @@ const settings = {
   useEffect(() => {
     const fetchSliderData = async () => {
       try {
-        const response = await fetch("http://localhost:8081/api/images/images"); // Replace with your API endpoint
+        const response = await fetch("http://15.206.228.110:8081/images/images"); // Replace with your API endpoint
         const data = await response.json();
     
         const formattedData = data.map((item) => ({

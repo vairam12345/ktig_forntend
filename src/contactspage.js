@@ -32,7 +32,7 @@ function Contactspage() {
 //       console.log('Payload:', payload);
   
 //       try {
-//         const response = await fetch('http://localhost:8081/api/form/submit', {
+//         const response = await fetch('http://15.206.228.110:8081/form/submit', {
 //           method: 'POST',
 //           headers: {
 //             'Content-Type': 'application/json',

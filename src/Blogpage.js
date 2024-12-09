@@ -10,7 +10,7 @@ function Blogpage() {
     useEffect(() => {
       // Fetch data from the backend
       axios
-        .get("http://localhost:8081/api/blogimages/images") // Replace with your API URL
+        .get("http://15.206.228.110:8081/blogimages/images") // Replace with your API URL
         .then((response) => {
           setBlogs(response.data); // Assuming response data is an array of blog objects
         })
