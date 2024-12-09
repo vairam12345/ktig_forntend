@@ -914,7 +914,7 @@ function Mainpage() {
         console.log('Payload:', payload);
     
         try {
-          const response = await fetch('http://15.206.228.110:8081/form/submit', {
+          const response = await fetch('http://15.206.228.110:8081/api/form/submit', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -941,7 +941,7 @@ const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // Fetch data from the backend
     axios
-      .get("http://15.206.228.110:8081/blogimages/images") // Replace with your API URL
+      .get("http://15.206.228.110:8081/api/blogimages/images") // Replace with your API URL
       .then((response) => {
         setBlogs(response.data); // Assuming response.data is an array of blog objects
       })
@@ -1026,7 +1026,7 @@ const handleSubmits = async (e) => {
   e.preventDefault(); // Prevents the default form submission behavior
 
   try {
-    const response = await axios.post('http://localhost:8081/Contact/submitforms', formData);
+    const response = await axios.post('http://15.206.228.110:8081/Contact/submitforms', formData);
     console.log('Response:', response.data); // Handle the response from the server
     // You can add further actions here, like clearing the form or showing a success message
   } catch (error) {
@@ -1224,7 +1224,7 @@ const settings = {
   useEffect(() => {
     const fetchSliderData = async () => {
       try {
-        const response = await fetch("http://15.206.228.110:8081/images/images"); // Replace with your API endpoint
+        const response = await fetch("http://15.206.228.110:8081/api/images/images"); // Replace with your API endpoint
         const data = await response.json();
     
         const formattedData = data.map((item) => ({

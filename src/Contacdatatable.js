@@ -10,7 +10,7 @@
 //   useEffect(() => {
 //     // Fetch data from the API
 //     axios
-//       .get('http://localhost:8081/Contact/submitforms')  // Replace with your API URL
+//       .get('http://15.206.228.110:8081/Contact/submitforms')  // Replace with your API URL
 //       .then((response) => {
 //         setData(response.data);
 //         setLoading(false);
@@ -90,7 +90,7 @@ const ConatctDataTable = () => {
   useEffect(() => {
     // Fetch data from the API
     axios
-      .get('http://localhost:8081/Contact/submitforms')  // Replace with your API URL
+      .get('http://15.206.228.110:8081/Contact/submitforms')  // Replace with your API URL
       .then((response) => {
         setData(response.data);
         setLoading(false);
@@ -110,7 +110,7 @@ const ConatctDataTable = () => {
 
     // Send DELETE request to the backend
     axios
-      .delete(`http://localhost:8081/Contact/deleteforms/${id}`)
+      .delete(`http://15.206.228.110:8081/Contact/deleteforms/${id}`)
       .then((response) => {
         // Filter out the deleted item from the state
         setData(data.filter(item => item._id !== id));  // Ensure the correct key for ID

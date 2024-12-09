@@ -346,7 +346,7 @@
 
 //       // POST API call for image upload
 //       axios
-//         .post("http://15.206.228.110:8081/images/upload", formDataToSend)
+//         .post("http://15.206.228.110:8081/api/images/upload", formDataToSend)
 //         .then((response) => {
 //           onSubmit(formType, {
 //             image: response.data.imageUrl,  // assuming response contains image URL
@@ -447,7 +447,7 @@
 //   // Fetch events data (GET API)
 //   useEffect(() => {
 //     axios
-//       .get("http://15.206.228.110:8081/images/images")
+//       .get("http://15.206.228.110:8081/api/images/images")
 //       .then((response) => {
 //         const events = response.data; // assuming data contains event list
 //         setForm1Events(events.filter(event => event.type === 'form1'));
@@ -671,8 +671,8 @@
 
 //       // Post API call based on form type
 //       const apiUrl = formType === "form1" 
-//         ? "http://15.206.228.110:8081/images/upload"
-//         : "http://15.206.228.110:8081/blogimages/upload";
+//         ? "http://15.206.228.110:8081/api/images/upload"
+//         : "http://15.206.228.110:8081/api/blogimages/upload";
       
 //       axios
 //         .post(apiUrl, formDataToSend)
@@ -776,7 +776,7 @@
 //   // Fetch events data for both forms (GET API)
 //   useEffect(() => {
 //     axios
-//       .get("http://15.206.228.110:8081/images/images")
+//       .get("http://15.206.228.110:8081/api/images/images")
 //       .then((response) => {
 //         const events = response.data; // assuming data contains event list
 //         setForm1Events(events.filter(event => event.type === 'form1'));
@@ -786,7 +786,7 @@
 //       });
 
 //     axios
-//       .get("http://15.206.228.110:8081/blogimages/images")
+//       .get("http://15.206.228.110:8081/api/blogimages/images")
 //       .then((response) => {
 //         const events = response.data; // assuming data contains event list
 //         setForm2Events(events.filter(event => event.type === 'form2'));
@@ -1020,8 +1020,8 @@
 //       // Post API call based on form type
 //       const apiUrl =
 //         formType === "form1"
-//           ? "http://15.206.228.110:8081/images/upload"
-//           : "http://15.206.228.110:8081/blogimages/upload";
+//           ? "http://15.206.228.110:8081/api/images/upload"
+//           : "http://15.206.228.110:8081/api/blogimages/upload";
 
 //       axios
 //         .post(apiUrl, formDataToSend)
